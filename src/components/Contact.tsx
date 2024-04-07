@@ -11,7 +11,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact: React.FC = () => {
-  const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "";
+  const apiBaseUrl = "/api/sendEmail";;
 
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
@@ -148,7 +148,7 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
   // // 🚀 Initiating Quantum Email Transmission 🪐
   // const launchEmail = async () => {
   //   try {
-  //     const response = await fetch('https://alpaycelik.dev/send',{
+  //     const response = await fetch('',{
   //     method: 'POST',
   //     headers: {'Content-Type': 'application/json'},
   //     body: JSON.stringify({
